@@ -1,2 +1,4 @@
 {
+  "obj_enter_store" : "Enter the store",
+  "obj_enter_store_desc" : "Enter the store do it how you want"
 }
