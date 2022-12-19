@@ -2,14 +2,17 @@
 	<Localization default="english.txt" directory="loc">
 		<loc file="english.txt" language="english"/>
 	</Localization>
-	<level ai_group_type="america" id="Amber Heist" max_bags="54">
+	<Package file="packages\rex_assets.xml" id="amber-heist" unload_on_restart="true"/>
+	<level ai_group_type="america" briefing_dialog="" id="amber" intro_event="" max_bags="54" player_style="generic">
 		<assets>
 			<asset name="ammo_bag"/>
 			<asset name="health_bag"/>
 			<asset name="grenade_crate"/>
 			<asset name="bodybags_bag"/>
 		</assets>
-		<outro_event/>
+		<outro_event>
+			<value_node value=""/>
+		</outro_event>
 		<packages/>
 		<script_data_mods directory="scriptdata">
 			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
@@ -19,7 +22,7 @@
 	</level>
 	<narrative contact="custom" id="amber_heist">
 		<chain>
-			<table level_id="Amber Heist" type="d" type_id="heist_type_assault"/>
+			<table level_id="amber" type="d" type_id="heist_type_assault"/>
 		</chain>
 		<contract_cost>
 			<value_node value="4000"/>
@@ -74,5 +77,4 @@
 			<value_node value="60000"/>
 		</payout>
 	</narrative>
-	<Package file="packages\rex_assets.xml" id="amber-heist" unload_on_restart="true"/>
 </table>

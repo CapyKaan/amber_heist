@@ -1,3 +1,1 @@
-<Package id="amber-heist" directory="assets" unload_on_restart="true">
-
-</Package>
+<table directory="assets" id="amber-heist" unload_on_restart="true"/>
